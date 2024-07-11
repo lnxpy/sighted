@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sighted"
+version = "0.0.1"
+description = "Your Brain Reads Faster Than Your Eyes"
+authors = [{ name = "Sadra Yahyapour", email = "lnxpylnxpy@gmail.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "spacy >= 3.7.5",
+    "spacy_syllables >= 3.0.2",
+    "en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl"
+]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.optional-dependencies]
+dev = ["coverage", "pytest-cookies"]
+
+[project.urls]
+Repository = "https://github.com/lnxpy/pyaction"
+
+[tool.setuptools.packages.find]
+exclude = ["test*"]
+
+[tool.bumpversion]
+current_version = "0.0.1"
+commit = "true"
+tag = "true"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
