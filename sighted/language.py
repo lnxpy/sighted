@@ -1,3 +1,4 @@
+import os
 from enum import StrEnum, auto
 from typing import List, Self
 
@@ -25,6 +26,9 @@ from sighted.parts_of_speech import (
     Verb,
     WhiteSpace,
 )
+
+BASE_URL = os.path.dirname(__file__)
+MODEL_PATH = os.path.join(BASE_URL, "en_core_web_sm")
 
 
 class PoS(StrEnum):
@@ -72,7 +76,7 @@ class Language:
         self.fixation = fixation
         self.saccade = saccade
 
-        self.processor = spacy.load("en_core_web_sm")
+        self.processor = spacy.load(MODEL_PATH)
 
     @property
     def ignore_pos(self: Self) -> List[str]:
