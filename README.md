@@ -1,7 +1,8 @@
 ## Sighted - Your brain reads faster than your eyes!
 Using NLP and bionic AI algorithms to help you stay focused and not get distracted when reading.
 
-[See how Sighted can be helpful for individuals with Dyslexia or ADHD who love reading books!](#adhd--dyslexia)
+- [Sighted is LIVE here!](https://sighted.vercel.app)
+- [See how Sighted can be helpful for individuals with Dyslexia and ADHD who love reading books!](#adhd--dyslexia)
 
 ### Installation
 ```sh
@@ -99,7 +100,9 @@ This parameter indicates how many first letters from each word should be conside
 Saccades are rapid, involuntary eye movements that play a crucial role in reading by allowing the eyes to jump quickly from one word or section of text to another. In bionic reading, a technique designed to enhance reading efficiency, saccades are optimized by strategically highlighting certain letters or parts of words to guide the reader’s gaze. This method reduces the cognitive load on the brain by making it easier to recognize and process words, thereby improving reading speed and comprehension. By leveraging the natural mechanics of saccades, Sighted can make the reading experience smoother and more intuitive, particularly for individuals with reading difficulties.
 
 ![Basic result](media/img4.png)
+
 ![Basic result](media/img5.png)
+Image credits: ResearchGate
 
 ### ADHD & Dyslexia
 Sighted aids individuals with dyslexia by highlighting the first few letters of words, enhancing pattern recognition and reducing the cognitive effort needed for word decoding. For those with ADHD (Attention Deficit Hyperactivity Disorder), this technique helps maintain focus and improves reading fluency by guiding the eyes and reducing distractions within the text.
