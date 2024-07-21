@@ -58,6 +58,15 @@ class Language:
         fixation: int = 2,
         saccade: int = 0,
     ) -> None:
+        """initializer
+
+        Args:
+            self (Self): self
+            text (str): given text
+            ignore_pos (List[PoS], optional): ignored parts of speech. Defaults to [].
+            fixation (int, optional): fixation. Defaults to 2.
+            saccade (int, optional): saccade. Defaults to 0.
+        """
         self.text = text
         self._ignore_pos = ignore_pos
         self.fixation = fixation

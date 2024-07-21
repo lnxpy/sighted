@@ -1,1 +1,1 @@
-from .literal.lang import Literal
+from .literal.lang import Literal  # noqa
